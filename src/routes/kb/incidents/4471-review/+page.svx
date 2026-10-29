@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 reviewed: two causes behind the date reports'
 owner: support desk
-status: reviewed
+status: resolved
 reviewed: '2026-10-29'
 signature: 'Codex for k-dang · S01E03'
 ---
@@ -16,6 +16,19 @@ signature: 'Codex for k-dang · S01E03'
 
 This review supersedes the interpretation in [the original incident](/kb/incidents/4471/).
 The export is a snapshot from 4 October 2026, not the current support queue.
+
+## Engineering disposition — 5 October
+
+The [course support desk] (https://hq.mega.dev/challenges/what-it-shows) reports
+that #4471 closed on 5 October. The parser was **fixed** by
+`fix(dates): parse dd/mm for eu locales`. The hint was **won't fix** because
+the booking-v3 form was retired. These are different outcomes: closing the hint
+ticket does not mean its hint was corrected.
+
+The public follow-up tickets preserve those dispositions:
+[parser — completed](https://github.com/k-dang/mega-dev-s01e03/issues/1) and
+[hint — not planned](https://github.com/k-dang/mega-dev-s01e03/issues/2).
+The tables below preserve the export's historical report counts and classification.
 
 ## What the evidence shows
 
@@ -74,7 +87,7 @@ Keep reports with unknown tenants or uncertain causes separate until investigate
 
 ## Desk action
 
-Use separate parser and hint tickets; keep the report IDs as the audit trail. Preserve
+Keep separate parser and hint tickets with their distinct dispositions and report IDs as the audit trail. Preserve
 the five flagged reports for follow-up. Recompute against a fresh export before making
 claims about today's queue. Do not close incoming reports merely because #4471 is marked known.
 
