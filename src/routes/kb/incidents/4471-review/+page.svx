@@ -4,7 +4,7 @@ title: '#4471 reviewed: two causes behind the date reports'
 owner: support desk
 status: resolved
 reviewed: '2026-10-29'
-signature: 'Codex for k-dang · S01E03'
+signature: 'v1.eyJzdWIiOiI2MzEiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzI1MjgzOSwiZXhwIjoxNzkzMzM5MjM5fQ.UHyOdlTGoognoz498_tgPvmRju23Mx6YIg6rDaUatWc'
 ---
 
 <script>
@@ -19,7 +19,7 @@ The export is a snapshot from 4 October 2026, not the current support queue.
 
 ## Engineering disposition — 5 October
 
-The [course support desk] (https://hq.mega.dev/challenges/what-it-shows) reports
+The [course support desk](https://hq.mega.dev/challenges/what-it-shows) reports
 that #4471 closed on 5 October. The parser was **fixed** by
 `fix(dates): parse dd/mm for eu locales`. The hint was **won't fix** because
 the booking-v3 form was retired. These are different outcomes: closing the hint

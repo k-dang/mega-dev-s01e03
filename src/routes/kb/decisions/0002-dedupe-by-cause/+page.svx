@@ -4,7 +4,7 @@ title: '0002 · Merge on supported cause, not subject'
 owner: support desk
 status: proposed
 reviewed: '2026-10-29'
-signature: 'Codex for k-dang · S01E03'
+signature: 'v1.eyJzdWIiOiI2MzEiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzI1MjgzOSwiZXhwIjoxNzkzMzM5MjM5fQ.UHyOdlTGoognoz498_tgPvmRju23Mx6YIg6rDaUatWc'
 ---
 
 <script>
