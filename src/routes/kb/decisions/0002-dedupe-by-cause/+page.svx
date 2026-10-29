@@ -1,0 +1,38 @@
+---
+layout: runbook
+title: '0002 · Merge on supported cause, not subject'
+owner: support desk
+status: proposed
+reviewed: '2026-10-29'
+signature: 'Codex for k-dang · S01E03'
+---
+
+<script>
+  import DedupeExplorer from '#lib/kb/DedupeExplorer.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+## Context
+
+The component-backed [review of #4471](/kb/incidents/4471-review/) shows distinct parser
+and form-hint causes inside one ticket. Identical subjects are insufficient evidence
+that two reports describe the same failure.
+
+## Proposed replacement for decision 0001
+
+Read the report body and resolve its tenant, locale, form version and channel. Use
+`sameCause` from `src/lib/kb/causes.ts` as the export's operational grouping rule.
+Merge only when evidence supports the same cause. Different subjects can describe the
+same cause; identical subjects can describe different causes. Unknown tenants and
+uncertain failures need investigation before merging.
+
+<DedupeExplorer />
+
+## Consequences
+
+The desk spends time reading and checking tenant data, so separate engineering fixes
+remain visible. The five anomalous descriptions in the incident review still require
+investigation. This proposal does not rewrite accepted decision 0001 or claim that
+the desk has already adopted a new policy.
+
+<RenderStamp {signature} />

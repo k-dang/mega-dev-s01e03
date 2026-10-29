@@ -1,0 +1,9 @@
+import{a as c,f as p}from"./DzR_OBTb.js";import"./C5WkUUX-.js";import{x as o,i as l}from"./DE_BJ79s.js";import{l as u,s as f}from"./1uPJYkyn.js";import{R as m}from"./DnJR_ksP.js";import{D as h}from"./CSWO7aDC.js";import{R as g}from"./B-_I2LDX.js";const e={layout:"runbook",title:"0002 · Merge on supported cause, not subject",owner:"support desk",status:"proposed",reviewed:"2026-10-29",signature:"Codex for k-dang · S01E03"},{layout:C,title:S,owner:D,status:M,reviewed:P,signature:b}=e;var v=p(`<h2>Context</h2> <p>The component-backed <a href="/kb/incidents/4471-review/">review of #4471</a> shows distinct parser
+and form-hint causes inside one ticket. Identical subjects are insufficient evidence
+that two reports describe the same failure.</p> <h2>Proposed replacement for decision 0001</h2> <p>Read the report body and resolve its tenant, locale, form version and channel. Use <code>sameCause</code> from <code>src/lib/kb/causes.ts</code> as the export’s operational grouping rule.
+Merge only when evidence supports the same cause. Different subjects can describe the
+same cause; identical subjects can describe different causes. Unknown tenants and
+uncertain failures need investigation before merging.</p> <!> <h2>Consequences</h2> <p>The desk spends time reading and checking tenant data, so separate engineering fixes
+remain visible. The five anomalous descriptions in the incident review still require
+investigation. This proposal does not rewrite accepted decision 0001 or claim that
+the desk has already adopted a new policy.</p> <!>`,1);function _(r,a){const n=u(a,["children","$$slots","$$events","$$legacy"]);m(r,f(()=>n,()=>e,{children:(i,w)=>{var t=v(),s=o(l(t),8);h(s,{});var d=o(s,6);g(d,{get signature(){return b}}),c(i,t)},$$slots:{default:!0}}))}const q=Object.freeze(Object.defineProperty({__proto__:null,default:_,metadata:e},Symbol.toStringTag,{value:"Module"}));export{q as _,_ as a};
